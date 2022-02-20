@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,42 @@
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="left-side">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" width="150">
+                <span>Odin</span>
+            </div>
+            <div class="bg-credits">Photo by someone</div>
+        </div>
+        <div class="right-side">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.
+            </p>
+
+            <p>You <em>know</em> you want to.</p>
+
+            <form id="form">
+                Let's do this!
+                <div><label for="firstName">FIRST NAME</label><input type="text" name="firstName" id="firstName" required></div>
+                <div><label for="lastName">LAST NAME</label><input type="text" name="lastName" id="lastName" required></div>
+                <div><label for="email">EMAIL</label><input type="email" name="email" id="email" required></div>
+                <div><label for="phoneNumber">PHONE NUMBER</label><input type="tel" name="phoneNumber" id="phoneNumber" required></div>
+                <div><label for="password">PASSWORD</label><input type="password" name="password" id="password" required></div>
+                <div>
+                    <label for="passwordConfirm">CONFIRM PASSWORD</label><input type="password" name="passwordConfirm"
+                        id="passwordConfirm" required>
+                </div>
+            </form>
+            <div class="sign-up">
+                <button type="submit" form="form">Create Account</button>
+                <div class="log-in">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

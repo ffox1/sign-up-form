@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+form {
+    padding: 20px 50px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.sign-up {
+    padding: 20px 50px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.left-side {
+    width: 600px;
+    background-image: url("images/background.jpeg");
+    flex-shrink: 2;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
