@@ -39,7 +39,7 @@ body {
     color: white;
     font-family: 'cyberpunksitalic';
     margin-top: 16vh;
-    font-size: 90px;
+    font-size: 75px;
     gap:20px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px 0px;
@@ -53,7 +53,6 @@ body {
     background-color: #0e0b16;
     height: 100vh;
 }
-
 
 form {
     display: flex;
@@ -75,12 +74,13 @@ form span {
 label {
     color: #ffffff;
     font-size: 12px;
+    padding: 4px 0px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 13px 0px;
     padding-right: 5vw;
 }
 
@@ -91,12 +91,29 @@ label {
 input {
     width: max(13vw, 200px);
     padding: 6px;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 8px;
 }
 
 input:focus {
-    border-color: blue;
+    border-color: #d061e7;
+}
+
+input:focus:valid {
+    border-color: #00e6fd;
+}
+
+input:valid + span::before {
+    font-size: 18px;
+    position: absolute;
+    content: "✓";
+    color: rgb(14, 216, 14);
+    top: -25px;
+    left: calc(max(13vw, 200px) + 25px);
+}
+
+input + span {
+    position: relative;
 }
 
 .sign-up {
@@ -110,14 +127,14 @@ input:focus {
     color: #a239ca;
 }
 
- .right-side p {
-     font-size: 20px;
-     font-weight: bold;
-     padding-left: 40px;
-     padding-right: 10vw;
- }
+.right-side p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 10vw;
+}
 
- .button {
+.button {
     background-image: linear-gradient(160deg, #4717f6, #44318d 50%,#a239ca);
     border: 0;
     border-radius: 8px;
@@ -130,29 +147,19 @@ input:focus {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 25px;
-  }
-  
-  .button span {
+}
+
+.button span {
     background-color: rgb(18, 1, 32);
     padding: 16px 24px;
     border-radius: 6px;
     transition: 300ms;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     background: none;
-  }
-  
- 
+}
 
-
-
- 
-
-
-
-
-
-
-
-
+textarea:focus, input:focus{
+    outline: none;
+}
